@@ -18,8 +18,8 @@ export function isAddress(value: any): string | false {
 }
 
 const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
-  56: '',
-  97: 'Bsc-testnet'
+  10001: '',
+  // 97: 'Bsc-testnet'
 }
 
 export function getEtherscanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
